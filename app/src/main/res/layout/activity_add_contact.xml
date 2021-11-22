@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.miniproject.projectc2s.AddContact">
+    <EditText
+        android:id = "@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop ="true"
+        android:layout_centerHorizontal = "true"
+        android:layout_marginTop="95dp"
+        android:ems = "10"
+        android:hint ="Name"
+        android:inputType="textPersonName"/>
+    <TextView
+        android:id= "@+id/textView"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="New Contact"
+        android:textColor="@color/design_default_color_primary_dark"/>
+    <EditText
+        android:id = "@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd = "@+id/name"
+        android:layout_below="@+id/name"
+        android:ems = "10"
+        android:hint ="Number"
+        android:inputType="number" />
+
+    <Button
+        android:id = "@id/add"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Add Contact"/>
+</RelativeLayout>
